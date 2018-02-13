@@ -1,0 +1,43 @@
+<div class="center jumbotron">
+<% if moussaillon_signed_in? %>
+
+<h1>Index du gossips</h1>
+
+<td><%= link_to 'Espace de rédaction', new_gossip_path, class: "btn btn-lg btn-primary" %></td>
+
+<h2>Listing gossip</h2>
+ 
+<table>
+  <tr>
+    <th>| anonymous_author</th>
+    <th>| content</th>
+    <th>| heure et date</th>
+  </tr>
+ 
+  <% @gossip.each do |gossip| %>
+    <tr>
+      <td>| <%= gossip.creator.username %>|</td>
+      <td> <%= gossip.content %>|</td>
+      <td> <%= gossip.created_at.strftime (" à %H:%M le %d/%m/%Y ") %>|</td>
+	<% if current_moussaillon.email == gossip.creator.email%>
+      <td> <%= link_to 'Supprimer', gossip , method: :delete, class: "btn btn-sm btn-danger" %>| </td> 
+	<% end %>
+	  </td>
+
+    </tr>
+  <% end %>
+</table>
+
+<% else %>
+
+<h1>Connecte toi pour afficher les secrets!</h1>
+
+
+	<p> Si tu as déjà un compte, c'est par ici <br/>
+		<%= link_to "login", new_moussaillon_session_path, class: "btn btn-lg btn-primary" %>
+	</p>
+	<p> Sinon c'est par là <br/>
+		<%= link_to "sign up", new_moussaillon_registration_path, class: "btn btn-lg btn-primary" %>
+	</p>
+<% end %>
+</div>
