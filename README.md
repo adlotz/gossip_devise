@@ -13,8 +13,8 @@ Cette application permet, si l'on est connecté:
 <br/>
 
 Par mesure de sécurité il faut rentrer un code pour pouvoir s'enregistrer, le code est 
->! gossip2018
+! gossip2018
 
 <br/>
 
-### voici un lien pour tester l'application sur heroku  <a href="https://gossipdeviseal.herokuapp.com/" title="lien vers l'application">heroku</a>
+### voici un lien pour tester l'application sur <a href="https://gossipdeviseal.herokuapp.com/" title="lien vers l'application">heroku</a>
