@@ -12,9 +12,8 @@ Cette application permet, si l'on est connecté:
 
 <br/>
 
-<a> Par mesure de sécurité il faut rentrer un code pour pouvoir s'enregistrer, le code est 
-<blockquote>! gossip2018</blockquote> 
-<a/>
+Par mesure de sécurité il faut rentrer un code pour pouvoir s'enregistrer, le code est <blockquote>gossip2018</blockquote> 
+
 
 <br/>
 
