@@ -1,14 +1,16 @@
+<div class="center jumbotron">
 <h1>Ecris ton gossip </h1>
 
 <%= form_with(model: @gossip, local: true) do |form| %>
  
   <p>
-    <%= form.label :content %><br>
+    <%= form.label :contenu %><br>
     <%= form.text_area :content %>
   </p>
  
   <p>
-    <%= form.submit 'Créer' %>
+    <%= form.submit 'Créer', class: "btn btn-lg btn-primary" %>
   </p>
  
 <% end %>
+</div>
