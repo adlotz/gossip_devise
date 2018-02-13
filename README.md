@@ -1,24 +1,20 @@
-# README
+# The Gossip devise project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ Ce repo à pour objectif de se familiariser avec la `gem devise` c'est une gem très complête qui facilite grandement la gestion de base de donnée utilisateur avec ses fonctions log in, log out ou encore sign up.
 
-Things you may want to cover:
+## Dans cette application
 
-* Ruby version
+Cette application permet, si l'on est connecté:
+* D'accèder à la liste des gossips 
+* De rédiger ses propres gossips
+* On ne peut supprimer que les gossips dont on est l'auteur
+* On peut changer son pseudo anonyme en éditant son profil
 
-* System dependencies
+<br/>
 
-* Configuration
+Par mesure de sécurité il faut rentrer un code pour pouvoir s'enregistrer, le code est 
+>! gossip2018
 
-* Database creation
+<br/>
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### voici un lien pour tester l'application sur heroku  <a href="https://gossipdeviseal.herokuapp.com/" title="lien vers l'application">heroku</a>

@@ -20,7 +20,7 @@
       <td> <%= gossip.content %></td>
       <td> <%= gossip.created_at.strftime (" à %H:%M le %d/%m/%Y ") %></td>
 	<% if current_moussaillon.email == gossip.creator.email%>
-      <td> <%= link_to 'Supprimer', gossip , method: :delete, class: "btn btn-sm btn-danger" %>| </td> 
+      <td> <%= link_to 'Supprimer', gossip , method: :delete, class: "btn btn-sm btn-danger" %> </td> 
 	<% end %>
 	  </td>
 
