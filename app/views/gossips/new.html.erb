@@ -1,4 +1,7 @@
 <div class="center jumbotron">
+<% if moussaillon_signed_in? %>
+
+
 <h1>Ecris ton gossip </h1>
 
 <%= form_with(model: @gossip, local: true) do |form| %>
@@ -13,4 +16,14 @@
   </p>
  
 <% end %>
+
+<% else %>
+
+<h2>Connectes toi pour créer un nouveau gossip</h2>
+
+    <%= link_to "Inscrit toi!", new_moussaillon_registration_path, class: "btn btn-lg btn-primary" %>
+    <%= link_to "Déjà inscrit?", new_moussaillon_session_path, class: "btn btn-lg btn-primary" %>
+
+<% end %>
+		
 </div>

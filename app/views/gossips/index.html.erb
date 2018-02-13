@@ -30,14 +30,13 @@
 
 <% else %>
 
-<h1>Connecte toi pour afficher les secrets!</h1>
+<h1>Bienvenue !</h1>
 
-
-	<p> Si tu as déjà un compte, c'est par ici <br/>
-		<%= link_to "log in", new_moussaillon_session_path, class: "btn btn-lg btn-primary" %>
-	</p>
-	<p> Sinon c'est par là <br/>
-		<%= link_to "sign up", new_moussaillon_registration_path, class: "btn btn-lg btn-primary" %>
-	</p>
+<h2>Tu veux pouvoir partager tes secrets?</h1>
+<h2> Où juste voir ceux des autres?</h2>
+	<h3> Commence par t'enregistrer 🎓</h3>
+    <%= link_to "Inscrit toi!", new_moussaillon_registration_path, class: "btn btn-lg btn-primary" %>
+    <%= link_to "Déjà inscrit?", new_moussaillon_session_path, class: "btn btn-lg btn-primary" %>
+		
 <% end %>
 </div>
